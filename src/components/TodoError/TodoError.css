@@ -1,0 +1,17 @@
+.container_error {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.img_error {
+  height: 20rem;
+}
+
+.text_error {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: var(--font-size-medium);
+  font-weight: 800;
+  text-align: center;
+  color: var(--color-primary);
+}

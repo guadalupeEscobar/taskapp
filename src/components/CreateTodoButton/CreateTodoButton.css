@@ -1,0 +1,37 @@
+.ConteinerButton {
+  display: flex;
+  width: 30rem;
+  justify-content: flex-end;
+}
+.CreateTodoImg {
+  height: 15rem;
+  transform: translateY(-2.5rem);
+
+  filter: drop-shadow(1px 1px 3px hsla(0, 0%, 53%, 0.905));
+}
+
+.CreateTodoButton {
+  height: 4.3rem;
+  width: 4.3rem;
+  border-radius: 50%;
+  background-color: var(--text-color-light);
+  border-style: none;
+  transform: translate(4.4rem, -1.2rem);
+  filter: drop-shadow(1px 1px 3px hsla(0, 0%, 53%, 0.905));
+  transition: var(--transition);
+  z-index: 1;
+  cursor: pointer;
+}
+.CreateTodoButton:hover {
+  background-color: hsla(351, 86%, 61%, 0.643);
+}
+
+.CreateTodoButton:active {
+  scale: 0.99;
+}
+.IconAdd {
+  height: 3rem;
+  width: 3rem;
+  color: var(--color-background);
+  filter: drop-shadow(1px 1px 3px hsla(0, 0%, 53%, 0.651));
+}

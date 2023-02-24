@@ -1,0 +1,76 @@
+.AddForm {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 90%;
+  width: 30rem;
+  background-color: var(--color-background);
+  padding: 3rem 4rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+textarea {
+  border: 0.1rem solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  font-size: var(--font-size);
+  text-align: center;
+  padding: 1.2rem;
+  height: 10rem;
+  width: calc(100%-25px);
+  font-family: inherit;
+}
+
+textarea::placeholder {
+  color: var(--text-color-light);
+  font-family: inherit;
+  font-weight: 400;
+}
+
+textarea:focus {
+  outline-color: var(--color-primary);
+}
+
+.TodoForm-buttonContainer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.TodoForm-button {
+  font-family: inherit;
+  cursor: pointer;
+  font-size: var(--font-size);
+  color: var(--text-color);
+  font-weight: 400;
+  width: 12rem;
+  height: 5rem;
+  border-radius: var(--border-radius);
+  border: none;
+  transition: var(--transition);
+}
+
+.TodoForm-button:hover {
+  scale: 1.05;
+}
+
+.TodoForm-button-add {
+  background-color: var(--color-primary);
+}
+
+.TodoForm-button-cancel {
+  background: transparent;
+}
+
+.img_add {
+  height: 8rem;
+  position: absolute;
+  top: 75%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(1px 1px 3px hsla(0, 0%, 53%, 0.905));
+}

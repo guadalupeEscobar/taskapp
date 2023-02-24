@@ -1,0 +1,14 @@
+.TodoList {
+  position: relative;
+  width: 30rem;
+  max-height: 30rem;
+  font-size: var(--font-size);
+  color: var(--text-color);
+}
+
+.TodoItemContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}

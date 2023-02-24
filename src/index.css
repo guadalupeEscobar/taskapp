@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --text-color: #566573;
+  --text-color-light: #b4b4b5;
+
+  --color-primary: #f14660;
+  --color-background: #efefee;
+
+  --font-size: 2rem;
+  --font-size-medium: 2.5rem;
+
+  --border-radius: 1rem;
+
+  --transition: all 0.5s ease;
+
+  --shadow: 3.8px 4.1px 3.6px rgba(0, 0, 0, 0.024),
+    10.6px 11.3px 10px rgba(0, 0, 0, 0.035),
+    25.6px 27.1px 24.1px rgba(0, 0, 0, 0.046),
+    85px 90px 80px rgba(0, 0, 0, 0.07);
+  --shadow-hover: 1.6px 1px 9.5px rgba(0, 0, 0, 0.069),
+    4.5px 2.9px 16.7px rgba(0, 0, 0, 0.11),
+    10.9px 6.9px 25.5px rgba(0, 0, 0, 0.142), 36px 23px 62px rgba(0, 0, 0, 0.2);
+  --shadow-active: 1.7px 1px 9.5px rgba(0, 0, 0, 0.16),
+    4.8px 2.9px 16.7px rgba(0, 0, 0, 0.193),
+    11.5px 6.9px 25.5px rgba(0, 0, 0, 0.212), 38px 23px 62px rgba(0, 0, 0, 0.26);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Source Code Pro", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color-background);
+  position: relative;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.Icon {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: scale 0.5s;
+}
+
+.Icon:hover {
+  scale: 1.1;
+}
+
+.Icon:active {
+  scale: 1;
 }

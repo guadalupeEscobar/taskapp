@@ -1,0 +1,55 @@
+@keyframes dotAnimation {
+  0% {
+    opacity: 100%;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 50%;
+    transform: scale(0.8);
+  }
+}
+.container_loading {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.dot_container {
+  height: fit-content;
+  width: 20rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.dot {
+  height: 4rem;
+  width: 4rem;
+
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  opacity: 50%;
+  animation: dotAnimation 1.5s infinite ease-in-out;
+}
+
+.dot-1 {
+  animation-delay: -0.32s;
+  margin-right: 1rem;
+}
+
+.dot-2 {
+  animation-delay: -0.16s;
+  margin-right: 1rem;
+}
+
+.img_loading {
+  height: 20rem;
+  width: auto;
+}

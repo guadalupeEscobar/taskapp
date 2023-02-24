@@ -1,0 +1,23 @@
+.TodoSearch {
+  height: 5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--color-primary);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  box-shadow: var(--shadow);
+  text-align: center;
+  font-family: inherit;
+  margin-bottom: 2rem;
+}
+
+.TodoSearch::placeholder {
+  color: var(--text-color-light);
+  font-family: inherit;
+  font-size: var(--font-size);
+  padding: 1rem 1rem;
+}
+
+.TodoSearch:focus {
+  outline-color: var(--color-primary);
+}

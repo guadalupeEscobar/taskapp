@@ -1,0 +1,14 @@
+.ModalOverlay {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0.8rem);
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}

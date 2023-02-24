@@ -1,0 +1,7 @@
+.TodoCounter {
+  max-width: 30rem;
+  margin-bottom: 2rem;
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+  text-align: center;
+}
